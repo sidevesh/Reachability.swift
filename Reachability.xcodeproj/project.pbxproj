@@ -30,6 +30,7 @@
 		AA73449A1BE76820008AFE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7344991BE76820008AFE69 /* Assets.xcassets */; };
 		AA7344B11BE76862008AFE69 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7344B01BE76862008AFE69 /* Reachability.swift */; };
 		AA7344B51BE769D6008AFE69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7344B31BE769D6008AFE69 /* LaunchScreen.xib */; };
+		CA6187661F8D220200FD5234 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = CA6187651F8D220200FD5234 /* CHANGELOG.md */; };
 		CAC230C51BF2180000F6464E /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7344721BE7678B008AFE69 /* Reachability.framework */; };
 		CAC230C61BF2180000F6464E /* Reachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA7344721BE7678B008AFE69 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -124,6 +125,11 @@
 		AA73449E1BE76820008AFE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7344B01BE76862008AFE69 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		AA7344B41BE769D6008AFE69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CA1983301F6FD0CD007D2DD1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CA6187601F8D21D700FD5234 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		CA6187611F8D21D700FD5234 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CA6187621F8D21D700FD5234 /* ReachabilitySwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReachabilitySwift.podspec; sourceTree = "<group>"; };
+		CA6187651F8D220200FD5234 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,11 @@
 		AA7344681BE7678B008AFE69 = {
 			isa = PBXGroup;
 			children = (
+				CA1983301F6FD0CD007D2DD1 /* README.md */,
+				CA6187651F8D220200FD5234 /* CHANGELOG.md */,
+				CA6187601F8D21D700FD5234 /* CONTRIBUTING.md */,
+				CA6187611F8D21D700FD5234 /* LICENSE */,
+				CA6187621F8D21D700FD5234 /* ReachabilitySwift.podspec */,
 				AA7344741BE7678B008AFE69 /* Reachability */,
 				AA7344911BE76820008AFE69 /* ReachabilitySample */,
 				00C54B121C09CD9C001C3F12 /* ReachabilityMac */,
@@ -423,27 +434,28 @@
 					};
 					00C54B1E1C09CF67001C3F12 = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					57A45A001C197BE800384AE4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					57A45A291C197F4800384AE4 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeamName = "Joylord Systems Ltd";
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					AA7344711BE7678B008AFE69 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeamName = "Joylord Systems Ltd";
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					AA73448F1BE76820008AFE69 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 9APVGUJV73;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -562,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7344B11BE76862008AFE69 /* Reachability.swift in Sources */,
+				CA6187661F8D220200FD5234 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +646,7 @@
 		00C54B161C09CD9C001C3F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -651,13 +665,16 @@
 				PRODUCT_NAME = Reachability;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		00C54B171C09CD9C001C3F12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -676,6 +693,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -692,6 +710,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.joylordsystems.Reachability.ReachabilityMacSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -709,6 +728,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -724,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.reachability.ReachabilityAppleTVSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -743,7 +763,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -752,6 +772,7 @@
 		57A45A341C197F4800384AE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
@@ -766,6 +787,7 @@
 				PRODUCT_NAME = Reachability;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -774,8 +796,10 @@
 		57A45A351C197F4800384AE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -789,6 +813,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -797,6 +822,7 @@
 		AA7344841BE7678B008AFE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -854,6 +880,7 @@
 		AA7344851BE7678B008AFE69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -904,6 +931,7 @@
 		AA7344871BE7678B008AFE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -921,14 +949,16 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		AA7344881BE7678B008AFE69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -944,7 +974,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -958,7 +988,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.joylordsystems.ReachabilitySample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -973,7 +1003,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.joylordsystems.ReachabilitySample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
